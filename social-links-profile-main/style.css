@@ -1,0 +1,95 @@
+:root {
+--backgroud-color: hsl(0, 0%, 8%);
+ --p-color: hsl(75, 94%, 57%);
+--h1-color: hsl(0, 0%, 100%);
+--button-color: hsl(0, 0%, 20%);
+--body-color: hsl(0, 0%, 12%);
+} 
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Estrutura */
+
+.espacamento {
+    padding-bottom: 1rem;
+    background-color: var(--body-color) ;
+    border-radius: 10px 10px 10px 10px;
+}
+
+ .image {
+    width: 90px;
+    margin: 1rem 0 0 6rem;
+    border-radius: 100%;
+}
+
+body {
+    background-color: var(--backgroud-color);
+    max-width: 17rem;
+    margin: 4rem 0 4rem 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    font-weight: 600;
+    width: 14rem;
+    height: 2rem;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 5px 5px 5px 5px;
+    gap: 10px;
+}
+
+section {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+h1, p, section {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fontes */
+
+h1 {
+    font-weight: 400;
+}
+
+h1, section, button {
+    color: white;
+}
+
+p {
+    font-weight: 600;
+    color: var(--p-color);
+}
+
+button:hover {
+    background-color: var(--backgroud-color);
+    border: 3px solid var(--p-color);
+    cursor: pointer;
+}
+
+/* Responsividade para PC */
+
+@media (min-width: 334px) {
+    body {
+        margin-left: 31rem;
+    }
+}
+
+
+
+
+
+
+
